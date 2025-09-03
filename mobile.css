@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+
+.header-yoga {
+    /* position: absolute; */
+    width: 45px;
+    height: 26px;
+    left: 24px;
+    top: 15px;
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    background: linear-gradient(73.19deg, #FF52AF 11.6%, #9F53FF 83.86%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.yoga-teacher-span{
+    transform: rotate(-10deg);
+}
