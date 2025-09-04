@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    background-color: #f5f0ff;
 }
 
 /* Header */
@@ -23,6 +24,6 @@
     background-clip: text;
 }
 
-.yoga-teacher-span{
+.yoga-teacher-span {
     transform: rotate(-10deg);
 }
