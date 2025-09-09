@@ -5,6 +5,14 @@
         padding: 0;
     }
 
+    .mobile{
+        display: none;
+    }
+
+    .settings-menu{
+        display: none;
+    }
+
     :root {
         --background: #f5f0ff;
         --h2: #220953;
@@ -91,6 +99,10 @@
 
 
     /* lightmode header////////////////////////////////////////////////////////////////////////// */
+    .mobile-header {
+        display: none;
+    }
+
     .ligth-header {
         display: flex;
         justify-content: space-between;
@@ -133,6 +145,8 @@
     /* darkmode header///////////////////////////////////////////////////// */
 
     #darkmode:checked~header {
+    
+
         .ligth-header {
             display: none;
         }
@@ -197,6 +211,8 @@
         margin-right: 4%;
         display: flex;
         justify-content: space-between;
+        /* flex-wrap: wrap; */
+        overflow: hidden;
     }
 
     .firstsection-text {
@@ -244,7 +260,9 @@
     }
 
     .home-yoga-img {
-        width: 37.5rem
+        max-width: 37.5rem;
+        /* height: 50%; */
+        /* max-width: auto; */
     }
 
     .hole-home-yoga-img {
@@ -270,7 +288,8 @@
         outline: none;
         color: white;
         padding: 1rem 1.75rem;
-        width: fit-content;
+        min-width: fit-content;
+        /* min */
     }
 
     .firstsection div {
@@ -333,7 +352,7 @@
     .text-01 {
         padding-top: 1.8rem;
         padding-left: 1.4rem;
-        width: 22rem;
+        max-width: 22rem;
     }
 
 
@@ -348,8 +367,7 @@
     }
 
     .ellipse-and-text-01 button {
-        width: fit-content;
-        width: 3rem;
+        max-width: 3rem;
         border: none;
         background: linear-gradient(73deg, #FF52AF 11.6%, #9F53FF 83.86%);
         -webkit-text-fill-color: transparent;
@@ -376,7 +394,7 @@
         left: .5rem;
         background-color: var(--bgallimg);
         border-radius: .75rem;
-        width: 10.5rem;
+        max-width: 10.5rem;
         display: flex;
         align-items: center;
         justify-content: space-evenly;
@@ -391,13 +409,13 @@
     }
 
     .bring-happiness-img {
-        width: 31.25rem;
+        min-width: 31.25rem;
     }
 
     .Description-box-health {
         position: absolute;
-        bottom: 2rem;
-        right: 2rem;
+        top: 83%;
+        right: 10%;
         background-color: var(--bgallimg);
         padding: .75rem .5rem;
         border-radius: .75rem;
@@ -407,7 +425,7 @@
     .bring-happiness-texts {
         display: flex;
         flex-direction: column;
-        width: 60%;
+        max-width: 60%;
         padding: 7rem 0 7rem 2rem;
     }
 
@@ -426,7 +444,7 @@
         outline: none;
         color: white;
         padding: 1rem 1.75rem;
-        width: 10.19rem;
+        max-width: 10.19rem;
         height: 3.5rem;
     }
 
@@ -443,6 +461,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        max-width: 50%;
     }
 
     .anytime-title {
@@ -461,14 +480,17 @@
         color: white;
         padding: 1rem 1.75rem;
         height: fit-content;
-        width: fit-content;
+        max-width: fit-content;
 
     }
 
 
     .anytime-img {
-        height: 36rem;
-        width: 75rem;
+        /* height: 33.4rem; */
+        height: 73.2dvh;
+        /* width: clamp(50%,75rem,50%); */
+        max-width: 50%;
+        /* max-width: 75rem; */
         position: relative;
         display: flex;
         flex-direction: column;
@@ -483,7 +505,7 @@
         background-color: var(--bgallimg);
         border-radius: 1rem;
         position: absolute;
-        top: 5rem;
+        top: 10%;
         right: 3%;
         z-index: 1;
     }
@@ -491,7 +513,8 @@
     .routine-yoga-1 {
         border: .75rem solid var(--background);
         border-radius: 12rem;
-        width: 31.25rem;
+        /* max-width: 31.25rem; */
+        max-width: 90%;
         position: absolute;
         top: 0;
         left: 0;
@@ -500,7 +523,7 @@
     .routine-yoga-2 {
         align-self: flex-end;
 
-        width: 31.25rem;
+        max-width: 90%;
         border-radius: 12rem;
     }
 
@@ -512,8 +535,8 @@
         background-color: var(--bgallimg);
         border-radius: 1rem;
         position: absolute;
-        bottom: 4rem;
-        left: 3rem;
+        bottom: 10%;
+        left: -1%;
         z-index: 1;
     }
 
@@ -524,6 +547,7 @@
         background-clip: text;
     }
 
+
     .follow-us-div {
         margin-left: 13%;
         margin-right: 13%;
@@ -533,22 +557,24 @@
     .follow-us-img-and-texts {
         display: flex;
         justify-content: space-between;
+        text-align: center;
     }
 
     .follow-us-img-and-texts img {
-        width: 17.5rem;
+        max-width: 26%;
         border-radius: 12rem;
         border: .5rem solid var(--bgborder);
 
     }
 
     .follow-us-text-and-btn {
-        position: relative;
-        width: 24.75rem;
+        /* max-width: 24.75rem; */
+        max-width: 35%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        position: relative;
     }
 
     .follow-us-text-and-btn span {
@@ -570,20 +596,23 @@
         border: none;
         outline: none;
         color: white;
-        width: fit-content;
+        /* max-width: fit-content; */
         padding: 1rem;
         position: absolute;
-        bottom: -3rem;
+        left: 47%;
+        bottom: -60px;
     }
 
     .follow-us-2 {
+        position: relative;
         display: flex;
+        /* flex-wrap: wrap; */
         justify-content: space-between;
 
     }
 
     .follow-us-2 img {
-        width: 31.25rem;
+        max-width: 45%;
         border-radius: 12rem;
         margin-top: 7rem;
         border: .5rem solid var(--bgborder);
@@ -599,7 +628,9 @@
 
     .newsletter {
 
-        margin-inline: 13%;
+        /* margin-inline: 13%; */
+        margin-left: 13%;
+        margin-right: 13%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -620,6 +651,8 @@
     .newsletter-text {
         margin-bottom: 2.5rem;
         color: white;
+        max-width: 55%;
+        text-align: center;
     }
 
     .newsletter-title,
@@ -634,7 +667,7 @@
 
     .subscribe-input {
         height: 4.5rem;
-        width: 33rem;
+        width: 40dvw;
         border-radius: 2rem;
         border: none;
         outline: none;
@@ -643,7 +676,7 @@
     }
 
     .subscribe-button {
-        width: fit-content;
+        max-width: fit-content;
         height: 3.5rem;
         border-radius: 2rem;
         border: none;
@@ -702,8 +735,10 @@
         display: grid;
         grid-auto-flow: column;
         /* justify-content: space-between; */
-        grid-template-columns: 32rem auto;
+        grid-template-columns: 20% auto;
         gap: 2.5rem;
+        column-gap: 30%;
+
 
     }
 
