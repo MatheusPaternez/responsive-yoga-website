@@ -1,0 +1,25 @@
+body::after {
+    content: "<992px (mobile)";
+    position: fixed;
+    right: 8px;
+    bottom: 8px;
+    padding: .35rem .5rem;
+    font: 600 12px/1.2 system-ui;
+    background: #0008;
+    color: #fff;
+    border-radius: .4rem;
+    z-index: 9999;
+    pointer-events: none;
+}
+
+@media (768px <=width <=991px) {
+    body::after {
+        content: "≥992px (tablet)";
+    }
+}
+
+@media (min-width: 992px) {
+    body::after {
+        content: "≥992px (desktop)";
+    }
+}
